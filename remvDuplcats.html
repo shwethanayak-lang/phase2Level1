@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment-3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script>
+      function removeDuplicates(arr) {
+        let uniqueArr = [];          // create an empty array
+        for (let i of arr) {
+          if (uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i);  // push arr elements to empty array if there is no matches in the elements
+          }
+        }
+
+        console.log(
+          "The given array is: " +
+            " " +
+            "[" +
+            arr +
+            "] " +
+            "  " +
+            "After Removing the duplicates, the array is: " +
+            "[" +
+            uniqueArr +
+            "]"
+        );
+
+        alert(
+          "The given array is: " +
+            " " +
+            "[" +
+            arr +
+            "] " +
+            "  " +
+            "After Removing the duplicates, the array is: " +
+            "[" +
+            uniqueArr +
+            "]"
+        );
+      }
+
+      removeDuplicates([1, 2, 30, 2, 3, 5, 5, 30]);  // take an array
+    </script>
+  </body>
+</html>
