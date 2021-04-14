@@ -1,0 +1,14 @@
+#chessContainer {
+  transform: translate(80%, 10%);
+  border: 3px solid black;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media only screen and (max-width: 640px) {
+  #chessContainer {
+    transform: translate(2%, 5%);
+  }
+}
